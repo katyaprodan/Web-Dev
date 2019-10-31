@@ -1,0 +1,8 @@
+#top { height: 15%; width:100%;}
+
+#navigation { height: 70%; width:25%; float:left;   }
+
+#content { height: 70%; width:75%; float:left; }
+
+#footer { height: 15%; width:100%; clear: left; }
+#target{width: 100%}
