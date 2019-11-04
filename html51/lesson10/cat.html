@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body onload="DrawImage1()">
+   <canvas id="c1" width="600px" height="600px" style="border: 1px solid">     
+  </canvas>
+  <script>
+    function DrawImage1(){
+      var canvas = document.getElementById("c1");
+      var ctx = canvas.getContext("2d");
+     
+      ctx.translate(100, 100);
+      
+    ctx.beginPath();
+   ctx.font = "50px Verdana";    //текст
+ctx.strokeStyle = "red";          
+ctx.strokeText("Кошеня", 190, 30);
+ctx.closePath();
+       ctx.fill();
+      ctx.beginPath();
+      ctx.lineCap="round";
+      ctx.lineWidth = "3";
+      ctx.fillStyle = "EACD79";
+      ctx.strokeStyle = "black";
+    ctx.moveTo(250,160);           
+    ctx.lineTo(300,140);          //вуха
+    ctx.lineTo(230,110);
+       ctx.stroke();
+     ctx.fill();
+      
+      
+        ctx.beginPath();
+    ctx.moveTo(300,129);
+    ctx.lineTo(358,116);          //вуха
+    ctx.lineTo(310,180);
+       ctx.stroke();
+       ctx.fill();
+ ctx.beginPath();
+      
+ 
+       ctx.fillStyle = "orange";
+       ctx.fillRect(276,212,30,40);
+      ctx.lineWidth = "2";
+     ctx.strokeRect(276,212,30,40);
+     
+      ctx.lineCap="round";
+      ctx.lineWidth = "3";
+       ctx.beginPath();
+            ctx.fill();
+            ctx.fillStyle = "orange";
+    ctx.beginPath();
+       ctx.arc(290, 170, 50, 0, Math.PI*2, false); // овал для обличчя
+     ctx.stroke();
+      ctx.fill();
+      
+      
+      ctx.beginPath();
+            ctx.arc(270, 160, 10, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+       ctx.beginPath();
+            ctx.arc(310, 160, 10, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+       ctx.beginPath();
+            ctx.arc(310, 160, 10, 0, 2 * Math.PI);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+      ctx.beginPath();
+        ctx.arc(270, 162, 6, 0, 2 * Math.PI);      // очi
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.closePath();
+       ctx.beginPath();
+            ctx.arc(310, 162, 6, 0, 2 * Math.PI);
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.closePath();
+      ctx.beginPath();
+      ctx.arc(289, 180, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = "black";
+            ctx.fill();
+            ctx.closePath();
+      
+      
+      ctx.strokeStyle="red";
+ctx.lineWidth=3;
+ctx.beginPath();                      
+ctx.arc(289,195,15,0,Math.PI,false);  // рот
+ctx.closePath();
+ctx.stroke();
+      
+      
+ctx.beginPath();
+                ctx.moveTo(319, 180);
+                ctx.lineTo(345, 171);
+                ctx.lineWidth = 2;
+        
+                ctx.moveTo(320, 185);
+                ctx.lineTo(350, 179);
+                ctx.lineWidth = 2;
+                
+                ctx.moveTo(320, 190);    // вуса
+                ctx.lineTo(350, 190);
+                ctx.lineWidth = 2;
+      
+                ctx.moveTo(260, 180);
+                ctx.lineTo(225, 170);
+                ctx.lineWidth = 2;
+        
+                ctx.moveTo(260, 184);
+                ctx.lineTo(225, 180);
+                ctx.lineWidth = 2;
+                
+                ctx.moveTo(260, 189);
+                 ctx.lineTo(225, 189);
+                 ctx.lineWidth = 2;
+                 ctx.strokeStyle = "black";
+     ctx.stroke();
+     
+  
+         ctx.fillStyle = "EACD79";
+     
+        ctx.fillRect(175,292,15,48);
+       ctx.lineWidth = "2";
+      ctx.strokeRect(175,292,15,48);
+       
+     
+        ctx.fillRect(270,292,15,48);
+       ctx.lineWidth = "2";
+      ctx.strokeRect(270,292,15,48);
+        ctx.fillRect(175,292,15,48);
+       ctx.lineWidth = "2";
+      ctx.strokeRect(175,292,15,48);// лапки
+       ctx.fillRect(200,292,15,48);
+       ctx.lineWidth = "2";
+       ctx.strokeRect(200,292,15,48);
+     
+       ctx.fillRect(294,292,15,48);
+      ctx.lineWidth = "2";
+     ctx.strokeRect(294,292,15,48);
+     
+      
+      ctx.scale(2,1);
+      
+var grd = ctx.createLinearGradient(0,0,200,0);
+      grd.addColorStop(0.5,"orange");
+      grd.addColorStop(1,"black");
+      ctx.fillStyle = grd;
+ 
+ctx.beginPath();
+ctx.arc(120, 271, 40, 0, 2 * Math.PI, false); // овал градиент
+ctx.closePath();
+ctx.stroke();
+ctx.fill();
+    
+      
+ctx.scale(0.10, 1);
+ctx.beginPath();
+   ctx.fillStyle = "EACD79";
+ctx.arc(800, 240, 40, 0, Math.PI*2, false); // хвостик
+      
+    ctx.fill();
+ctx.stroke();
+      
+ctx.closePath();
+    
+       
+    }
+  </script>
+</body>
+</html>
