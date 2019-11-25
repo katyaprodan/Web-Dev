@@ -6,5 +6,24 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
  
- 
- 
+ .box1{
+  padding-top: 200px ;
+  background-color: rgb(255, 130, 136);
+
+
+
+
+ }
+ .box2{
+  background: rgb(210, 231, 231);
+ }
+ #text1{
+  color: maroon;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 130, 136);
+ }
+ .box3{
+  background: rgb(210, 231, 231);
+overflow: visible;
+ }
