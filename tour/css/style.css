@@ -24,7 +24,44 @@ text-align: center;
 font-family: Georgia, 'Times New Roman', Times, serif;
 background-color: rgb(255, 130, 136);
 }
-.box3{
+#text2{
+  color: maroon;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 130, 136);
+  }
+
+  #text3{
+  color: maroon;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(255, 130, 136);
+  }
+  #text4{
+    color: maroon;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(255, 130, 136);
+    }
+    #text5{
+      color: maroon;
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: rgb(255, 130, 136);
+      }
+      #text6{
+        color: maroon;
+        text-align: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: rgb(255, 130, 136);
+        }
+        #text7{
+          color: maroon;
+          text-align: center;
+          font-family: Georgia, 'Times New Roman', Times, serif;
+          background-color: rgb(255, 130, 136);
+          }    
+  .box3{
 background: rgb(210, 231, 231);
 height: 1000px;
 overflow: auto;
