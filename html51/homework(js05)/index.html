@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<script>
+    var person=[]
+person[0]={name: "George", age: 32, wages: "1000$"}
+person[1]={name: "Edward", age: 17, wages: "500$"}
+person[2]={name: "Christine", age: 58, wages: "630$"}
+person[3]={name: "Sarah", age: 62, wages: "700$"}
+
+person.sort(function(a, b){
+  return a.age-b.age
+}) 
+function rtable()
+{
+    document.writeln("<table><thead><tr><th>name</th><th>age</th><th>wages</th></tr></thead></table>");
+    for(let index=0; index<person.length; index++)
+    {
+        let element=person[index];
+        document.writeln("<tr><td>"+ element.name + "</td><td>"+ element.age+ "</td><td>" + element.wages+ "></td>");
+    }
+    document.writeln("</tbody></table>");
+}
+function rundemo(){
+    var r=document.getElementById("res");
+    r.innerHTML=('div class="row"');
+    for(const key in person)
+    {
+        r.innerHTML +=('div class="col-sm-6 col-md-4")'+
+'<div class="demo">'+
+'<h3>'+ person[key].name + '</h3>' + 
+'<p>'+ person[key].age +  ' ' +  person[key].wages +'</p>' +
+'</div>'+
+'</div>'+
+'</div>'
+
+        )}
+}
+r.innerHTML += ('</div>');
+</script>
+<body onload="rundemo()">
+        <div id="res" class="container">
+  </div>
+  <script src="//code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
