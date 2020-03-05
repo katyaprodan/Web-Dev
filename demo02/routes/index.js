@@ -9,8 +9,24 @@ router.get('/', function (req, res) {
 router.post('/', function (req, res) {
   res.render('index', {
     title: 'Method POST result', 
-    greetings: "Hello " + req.body.firstname[0]+'.'+ req.body.lastname
+  
+    number:" "+firstnumber*secondnumber
   });
 });
 
 module.exports = router;
+
+  
+               
+        
+   
+ 
+ 
+  
+
+    
+  
+ 
+                   
+              
+
