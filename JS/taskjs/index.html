@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function makeTable() {
+        var num1 = document.getElementById("num1");
+        var num2 = document.getElementById("num2");
+        var riz = n - m;
+        for (var i = 0; i <= riz; i++) {
+            m++;
+            if (m % 2 == 0) {
+                answer.innerHTML += "<tr><td>" + i + "</td><td>" + m + "</td></tr>";
+                
+            }}}</script>
+</head>
+<body>
+    <form>
+        <div>
+            <label for="num1">M=</label>
+            <input type="number" id="num1" name="num1">
+        </div>
+        <div>
+            <label for="num2">N=</label>
+            <input type="number" id="num2" name="num2">
+        </div>
+        <button type="button" onclick="makeTable()">makeTable</button>
+    </form>
+    <table id="answer">
+     
+    </table>
+</body>
+</html>
